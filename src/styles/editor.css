@@ -1,0 +1,34 @@
+/* Estilos para o editor contentEditable */
+[contenteditable]:empty:before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  font-style: italic;
+  pointer-events: none;
+}
+
+[contenteditable] {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+[contenteditable]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+[contenteditable] ul, [contenteditable] ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+[contenteditable] li {
+  margin: 0.25rem 0;
+}
+
+[contenteditable] strong {
+  font-weight: 600;
+}
+
+[contenteditable] em {
+  font-style: italic;
+}
